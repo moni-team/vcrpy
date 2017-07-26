@@ -177,7 +177,7 @@ class Cassette(object):
     def __init__(self, path, serializer=yamlserializer, persister=FilesystemPersister, record_mode='once',
                  match_on=(uri, method), before_record_request=None,
                  before_record_response=None, custom_patches=(),
-                 inject=False):
+                 inject=False, allow_replay=False):
         self._persister = persister
         self._path = path
         self._serializer = serializer
@@ -193,6 +193,7 @@ class Cassette(object):
         self.play_counts = collections.Counter()
         self.dirty = False
         self.rewound = False
+        self.allow_replay = allow_replay
 
     @property
     def play_count(self):
@@ -252,7 +253,7 @@ class Cassette(object):
         hasn't been played back before, and mark it as played
         """
         for index, response in self._responses(request):
-            if self.play_counts[index] == 0:
+            if self.play_counts[index] == 0 or self.allow_replay:
                 self.play_counts[index] += 1
                 return response
         # The cassette doesn't contain the request asked for.
@@ -314,6 +315,6 @@ class Cassette(object):
     def __contains__(self, request):
         """Return whether or not a request has been stored"""
         for index, response in self._responses(request):
-            if self.play_counts[index] == 0:
+            if self.play_counts[index] == 0 or self.allow_replay:
                 return True
         return False
