@@ -6,14 +6,21 @@ from ..serialize import serialize, deserialize
 
 class FilesystemPersister(object):
 
+    cache = {}
+
     @classmethod
     def load_cassette(cls, cassette_path, serializer):
+
+        if cassette_path in cls.cache:
+            return cls.cache[cassette_path]
+
         try:
             with open(cassette_path) as f:
                 cassette_content = f.read()
         except IOError:
             raise ValueError('Cassette not found.')
         cassette = deserialize(cassette_content, serializer)
+        cls.cache[cassette_path] = cassette
         return cassette
 
     @staticmethod
