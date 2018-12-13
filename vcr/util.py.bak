@@ -43,7 +43,7 @@ class CaseInsensitiveDict(collections.MutableMapping):
         del self._store[key.lower()]
 
     def __iter__(self):
-        return (casedkey for casedkey, mappedvalue in list(self._store.values()))
+        return (casedkey for casedkey, mappedvalue in self._store.values())
 
     def __len__(self):
         return len(self._store)
@@ -53,7 +53,7 @@ class CaseInsensitiveDict(collections.MutableMapping):
         return (
             (lowerkey, keyval[1])
             for (lowerkey, keyval)
-            in list(self._store.items())
+            in self._store.items()
         )
 
     def __eq__(self, other):
@@ -66,16 +66,16 @@ class CaseInsensitiveDict(collections.MutableMapping):
 
     # Copy is required
     def copy(self):
-        return CaseInsensitiveDict(list(self._store.values()))
+        return CaseInsensitiveDict(self._store.values())
 
     def __repr__(self):
-        return str(dict(list(self.items())))
+        return str(dict(self.items()))
 
 
 def partition_dict(predicate, dictionary):
     true_dict = {}
     false_dict = {}
-    for key, value in list(dictionary.items()):
+    for key, value in dictionary.items():
         this_dict = true_dict if predicate(key, value) else false_dict
         this_dict[key] = value
     return true_dict, false_dict
@@ -116,7 +116,7 @@ def auto_decorate(
         def __new__(cls, name, bases, attributes_dict):
             new_attributes_dict = dict(
                 (attribute, maybe_decorate(attribute, value))
-                for attribute, value in list(attributes_dict.items())
+                for attribute, value in attributes_dict.items()
             )
             return super(DecorateAll, cls).__new__(
                 cls, name, bases, new_attributes_dict

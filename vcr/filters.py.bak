@@ -86,7 +86,7 @@ def replace_post_data_parameters(request, replacements):
     if request.method == 'POST' and not isinstance(request.body, BytesIO):
         if request.headers.get('Content-Type') == 'application/json':
             json_data = json.loads(request.body.decode('utf-8'))
-            for k, rv in list(replacements.items()):
+            for k, rv in replacements.items():
                 if k in json_data:
                     ov = json_data.pop(k)
                     if callable(rv):

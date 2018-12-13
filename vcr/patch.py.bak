@@ -147,7 +147,7 @@ class CassettePatcherBuilder(object):
         described in the previous paragraph.
         """
         if isinstance(replacement_dict_or_obj, dict):
-            for key, replacement_obj in list(replacement_dict_or_obj.items()):
+            for key, replacement_obj in replacement_dict_or_obj.items():
                 replacement_obj = self._recursively_apply_get_cassette_subclass(
                     replacement_obj)
                 replacement_dict_or_obj[key] = replacement_obj
@@ -347,7 +347,7 @@ class ConnectionRemover(object):
         return self
 
     def __exit__(self, *args):
-        for pool, connections in list(self._connection_pool_to_connections.items()):
+        for pool, connections in self._connection_pool_to_connections.items():
             readd_connections = []
             while pool.pool and not pool.pool.empty() and connections:
                 connection = pool.pool.get()

@@ -1,5 +1,5 @@
 '''Stubs for aiohttp HTTP clients'''
-
+from __future__ import absolute_import
 
 import asyncio
 import functools
@@ -48,7 +48,7 @@ def vcr_request(cassette, real_request):
 
         request_url = URL(url)
         if params:
-            for k, v in list(params.items()):
+            for k, v in params.items():
                 params[k] = str(v)
             request_url = URL(url).with_query(params)
 

@@ -1,0 +1,706 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLSPHINXOPTS	docs/Makefile	/^ALLSPHINXOPTS   = -d $(BUILDDIR)\/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	m
+BUILDDIR	docs/Makefile	/^BUILDDIR      = _build$/;"	m
+CASSETTE_FORMAT_VERSION	vcr/serialize.py	/^CASSETTE_FORMAT_VERSION = 1$/;"	v
+CannotOverwriteExistingCassetteException	vcr/errors.py	/^class CannotOverwriteExistingCassetteException(Exception):$/;"	c
+CaseInsensitiveDict	vcr/util.py	/^class CaseInsensitiveDict(collections.MutableMapping):$/;"	c
+Cassette	vcr/cassette.py	/^class Cassette(object):$/;"	c
+CassetteContextDecorator	vcr/cassette.py	/^class CassetteContextDecorator(object):$/;"	c
+CassettePatcherBuilder	vcr/patch.py	/^class CassettePatcherBuilder(object):$/;"	c
+ConnectionRemover	vcr/patch.py	/^class ConnectionRemover(object):$/;"	c
+CustomFilesystemPersister	tests/integration/test_register_persister.py	/^class CustomFilesystemPersister(object):$/;"	c
+DecorateAll	vcr/util.py	/^    class DecorateAll(type):$/;"	c
+FilesystemPersister	vcr/persisters/filesystem.py	/^class FilesystemPersister(object):$/;"	c
+HeadersDict	vcr/request.py	/^class HeadersDict(CaseInsensitiveDict):$/;"	c
+I18NSPHINXOPTS	docs/Makefile	/^I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	m
+MockClientResponse	vcr/stubs/aiohttp_stubs/__init__.py	/^class MockClientResponse(ClientResponse):$/;"	c
+MockSerializer	tests/integration/test_register_serializer.py	/^class MockSerializer(object):$/;"	c
+NullHandler	vcr/__init__.py	/^    class NullHandler(logging.Handler):$/;"	c
+PAPER	docs/Makefile	/^PAPER         =$/;"	m
+PAPEROPT_a4	docs/Makefile	/^PAPEROPT_a4     = -D latex_paper_size=a4$/;"	m
+PAPEROPT_letter	docs/Makefile	/^PAPEROPT_letter = -D latex_paper_size=letter$/;"	m
+PARTS	vcr/migration.py	/^PARTS = [$/;"	v
+Proxy	tests/integration/test_proxy.py	/^class Proxy(SimpleHTTPServer.SimpleHTTPRequestHandler):$/;"	c
+PyTest	setup.py	/^class PyTest(TestCommand):$/;"	c
+REQUESTS	tests/unit/test_matchers.py	/^REQUESTS = {$/;"	v
+Request	vcr/request.py	/^class Request(object):$/;"	c
+SPHINXBUILD	docs/Makefile	/^SPHINXBUILD   = sphinx-build$/;"	m
+SPHINXOPTS	docs/Makefile	/^SPHINXOPTS    =$/;"	m
+Test	tests/unit/test_cassettes.py	/^    class Test(object):$/;"	c	function:test_custom_patchers
+Test	tests/unit/test_vcr.py	/^    class Test(object):$/;"	c	function:test_custom_patchers
+TestVCRClass	tests/unit/test_vcr.py	/^class TestVCRClass(VCR().test_case()):$/;"	c
+TestVCRConnection	tests/unit/test_stubs.py	/^class TestVCRConnection(object):$/;"	c
+UnhandledHTTPRequestError	vcr/errors.py	/^class UnhandledHTTPRequestError(KeyError):$/;"	c
+VCR	vcr/config.py	/^class VCR(object):$/;"	c
+VCRCertValidatingHTTPSConnection	vcr/stubs/boto_stubs.py	/^class VCRCertValidatingHTTPSConnection(VCRHTTPSConnection):$/;"	c
+VCRConnection	vcr/stubs/__init__.py	/^class VCRConnection(object):$/;"	c
+VCRFakeSocket	vcr/stubs/__init__.py	/^class VCRFakeSocket(object):$/;"	c
+VCRHTTPConnection	vcr/stubs/__init__.py	/^class VCRHTTPConnection(VCRConnection):$/;"	c
+VCRHTTPConnectionWithTimeout	vcr/stubs/httplib2_stubs.py	/^                                   HTTPConnectionWithTimeout):$/;"	c
+VCRHTTPResponse	vcr/stubs/__init__.py	/^class VCRHTTPResponse(HTTPResponse):$/;"	c
+VCRHTTPSConnection	vcr/stubs/__init__.py	/^class VCRHTTPSConnection(VCRConnection):$/;"	c
+VCRHTTPSConnectionWithTimeout	vcr/stubs/httplib2_stubs.py	/^                                    HTTPSConnectionWithTimeout):$/;"	c
+VCRRequestsHTTPConnection	vcr/stubs/boto3_stubs.py	/^class VCRRequestsHTTPConnection(VCRHTTPConnection, HTTPConnection):$/;"	c
+VCRRequestsHTTPConnection	vcr/stubs/requests_stubs.py	/^class VCRRequestsHTTPConnection(VCRHTTPConnection, HTTPConnection):$/;"	c
+VCRRequestsHTTPConnection	vcr/stubs/urllib3_stubs.py	/^class VCRRequestsHTTPConnection(VCRHTTPConnection, HTTPConnection):$/;"	c
+VCRRequestsHTTPSConnection	vcr/stubs/boto3_stubs.py	/^class VCRRequestsHTTPSConnection(VCRHTTPSConnection, VerifiedHTTPSConnection):$/;"	c
+VCRRequestsHTTPSConnection	vcr/stubs/requests_stubs.py	/^class VCRRequestsHTTPSConnection(VCRHTTPSConnection, VerifiedHTTPSConnection):$/;"	c
+VCRRequestsHTTPSConnection	vcr/stubs/urllib3_stubs.py	/^class VCRRequestsHTTPSConnection(VCRHTTPSConnection, VerifiedHTTPSConnection):$/;"	c
+_AiohttpClientSessionRequest	vcr/patch.py	/^    _AiohttpClientSessionRequest = aiohttp.client.ClientSession._request$/;"	v
+_Boto3VerifiedHTTPSConnection	vcr/patch.py	/^    _Boto3VerifiedHTTPSConnection = cpool.VerifiedHTTPSConnection$/;"	v
+_CertValidatingHTTPSConnection	vcr/patch.py	/^    _CertValidatingHTTPSConnection = boto.https_connection.CertValidatingHTTPSConnection$/;"	v
+_CurlAsyncHTTPClient_fetch_impl	vcr/patch.py	/^        tornado.curl_httpclient.CurlAsyncHTTPClient.fetch_impl$/;"	v
+_HTTPConnection	vcr/patch.py	/^_HTTPConnection = httplib.HTTPConnection$/;"	v
+_HTTPConnectionWithTimeout	vcr/patch.py	/^    _HTTPConnectionWithTimeout = httplib2.HTTPConnectionWithTimeout$/;"	v
+_HTTPSConnection	vcr/patch.py	/^_HTTPSConnection = httplib.HTTPSConnection$/;"	v
+_HTTPSConnectionWithTimeout	vcr/patch.py	/^    _HTTPSConnectionWithTimeout = httplib2.HTTPSConnectionWithTimeout$/;"	v
+_SCHEME_TO_CONNECTION	vcr/patch.py	/^    _SCHEME_TO_CONNECTION = httplib2.SCHEME_TO_CONNECTION$/;"	v
+_SimpleAsyncHTTPClient_fetch_impl	vcr/patch.py	/^        tornado.simple_httpclient.SimpleAsyncHTTPClient.fetch_impl$/;"	v
+_VerifiedHTTPSConnection	vcr/patch.py	/^    _VerifiedHTTPSConnection = cpool.VerifiedHTTPSConnection$/;"	v
+__all__	vcr/compat.py	/^__all__ = ['mock', 'contextlib']$/;"	v
+__call__	vcr/cassette.py	/^    def __call__(self, function, instance, args, kwargs):$/;"	m	class:CassetteContextDecorator	file:
+__contains__	vcr/cassette.py	/^    def __contains__(self, request):$/;"	m	class:Cassette	file:
+__delitem__	vcr/util.py	/^    def __delitem__(self, key):$/;"	m	class:CaseInsensitiveDict	file:
+__enter__	vcr/cassette.py	/^    def __enter__(self):$/;"	m	class:CassetteContextDecorator	file:
+__enter__	vcr/patch.py	/^    def __enter__(self):$/;"	m	class:ConnectionRemover	file:
+__eq__	vcr/util.py	/^    def __eq__(self, other):$/;"	m	class:CaseInsensitiveDict	file:
+__exit__	vcr/cassette.py	/^    def __exit__(self, *args):$/;"	m	class:CassetteContextDecorator	file:
+__exit__	vcr/patch.py	/^    def __exit__(self, *args):$/;"	m	class:ConnectionRemover	file:
+__getattr__	vcr/stubs/__init__.py	/^    def __getattr__(self, name):$/;"	m	class:VCRConnection	file:
+__getitem__	vcr/util.py	/^    def __getitem__(self, key):$/;"	m	class:CaseInsensitiveDict	file:
+__init__	tests/integration/test_register_serializer.py	/^    def __init__(self):$/;"	m	class:MockSerializer
+__init__	vcr/cassette.py	/^    def __init__(self, cls, args_getter):$/;"	m	class:CassetteContextDecorator
+__init__	vcr/cassette.py	/^    def __init__(self, path, serializer=None, persister=None, record_mode='once',$/;"	m	class:Cassette
+__init__	vcr/config.py	/^    def __init__(self, path_transformer=None, before_record_request=None,$/;"	m	class:VCR
+__init__	vcr/patch.py	/^    def __init__(self, cassette):$/;"	m	class:CassettePatcherBuilder
+__init__	vcr/patch.py	/^    def __init__(self, connection_class):$/;"	m	class:ConnectionRemover
+__init__	vcr/request.py	/^    def __init__(self, method, uri, body, headers):$/;"	m	class:Request
+__init__	vcr/stubs/__init__.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:VCRConnection
+__init__	vcr/stubs/__init__.py	/^    def __init__(self, recorded_response):$/;"	m	class:VCRHTTPResponse
+__init__	vcr/stubs/aiohttp_stubs/__init__.py	/^    def __init__(self, method, url):$/;"	m	class:MockClientResponse
+__init__	vcr/stubs/httplib2_stubs.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:VCRHTTPConnectionWithTimeout
+__init__	vcr/stubs/httplib2_stubs.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:VCRHTTPSConnectionWithTimeout
+__init__	vcr/util.py	/^    def __init__(self, data=None, **kwargs):$/;"	m	class:CaseInsensitiveDict
+__iter__	vcr/util.py	/^    def __iter__(self):$/;"	m	class:CaseInsensitiveDict	file:
+__len__	vcr/cassette.py	/^    def __len__(self):$/;"	m	class:Cassette	file:
+__len__	vcr/util.py	/^    def __len__(self):$/;"	m	class:CaseInsensitiveDict	file:
+__new__	vcr/util.py	/^        def __new__(cls, name, bases, attributes_dict):$/;"	m	class:.DecorateAll	file:
+__repr__	vcr/request.py	/^    def __repr__(self):$/;"	m	class:Request	file:
+__repr__	vcr/util.py	/^    def __repr__(self):$/;"	m	class:CaseInsensitiveDict	file:
+__setattr__	vcr/stubs/__init__.py	/^    def __setattr__(self, name, value):$/;"	m	class:VCRConnection	file:
+__setattr__	vcr/util.py	/^        def __setattr__(cls, attribute, value):$/;"	m	class:.DecorateAll	file:
+__setitem__	vcr/request.py	/^    def __setitem__(self, key, value):$/;"	m	class:HeadersDict	file:
+__setitem__	vcr/util.py	/^    def __setitem__(self, key, value):$/;"	m	class:CaseInsensitiveDict	file:
+__str__	vcr/cassette.py	/^    def __str__(self):$/;"	m	class:Cassette	file:
+__str__	vcr/request.py	/^    def __str__(self):$/;"	m	class:Request	file:
+_aiohttp	vcr/patch.py	/^    def _aiohttp(self):$/;"	m	class:CassettePatcherBuilder
+_already_migrated	vcr/migration.py	/^def _already_migrated(data):$/;"	f
+_as_dict	vcr/cassette.py	/^    def _as_dict(self):$/;"	m	class:Cassette
+_baseclass	vcr/stubs/__init__.py	/^    _baseclass = HTTPConnection$/;"	v	class:VCRHTTPConnection
+_baseclass	vcr/stubs/__init__.py	/^    _baseclass = HTTPSConnection$/;"	v	class:VCRHTTPSConnection
+_baseclass	vcr/stubs/boto3_stubs.py	/^    _baseclass = HTTPConnection$/;"	v	class:VCRRequestsHTTPConnection
+_baseclass	vcr/stubs/boto3_stubs.py	/^    _baseclass = VerifiedHTTPSConnection$/;"	v	class:VCRRequestsHTTPSConnection
+_baseclass	vcr/stubs/boto_stubs.py	/^    _baseclass = CertValidatingHTTPSConnection$/;"	v	class:VCRCertValidatingHTTPSConnection
+_baseclass	vcr/stubs/httplib2_stubs.py	/^    _baseclass = HTTPConnectionWithTimeout$/;"	v	class:VCRHTTPConnectionWithTimeout
+_baseclass	vcr/stubs/httplib2_stubs.py	/^    _baseclass = HTTPSConnectionWithTimeout$/;"	v	class:VCRHTTPSConnectionWithTimeout
+_baseclass	vcr/stubs/requests_stubs.py	/^    _baseclass = HTTPConnection$/;"	v	class:VCRRequestsHTTPConnection
+_baseclass	vcr/stubs/requests_stubs.py	/^    _baseclass = VerifiedHTTPSConnection$/;"	v	class:VCRRequestsHTTPSConnection
+_baseclass	vcr/stubs/urllib3_stubs.py	/^    _baseclass = HTTPConnection$/;"	v	class:VCRRequestsHTTPConnection
+_baseclass	vcr/stubs/urllib3_stubs.py	/^    _baseclass = VerifiedHTTPSConnection$/;"	v	class:VCRRequestsHTTPSConnection
+_boto	vcr/patch.py	/^    def _boto(self):$/;"	m	class:CassettePatcherBuilder
+_boto3	vcr/patch.py	/^    def _boto3(self):$/;"	m	class:CassettePatcherBuilder
+_build_args_getter_for_decorator	vcr/cassette.py	/^    def _build_args_getter_for_decorator(self, function):$/;"	m	class:CassetteContextDecorator
+_build_before_record_request	vcr/config.py	/^    def _build_before_record_request(self, options):$/;"	m	class:VCR
+_build_before_record_response	vcr/config.py	/^    def _build_before_record_response(self, options):$/;"	m	class:VCR
+_build_cassette_subclass	vcr/patch.py	/^    def _build_cassette_subclass(self, base_class):$/;"	m	class:CassettePatcherBuilder
+_build_ignore_hosts	vcr/config.py	/^    def _build_ignore_hosts(hosts_to_ignore):$/;"	m	class:VCR
+_build_patcher	vcr/patch.py	/^    def _build_patcher(self, obj, patched_attribute, replacement_class):$/;"	m	class:CassettePatcherBuilder
+_build_patchers_from_mock_triples	vcr/patch.py	/^    def _build_patchers_from_mock_triples(self, mock_triples):$/;"	m	class:CassettePatcherBuilder
+_build_patchers_from_mock_triples_decorator	vcr/patch.py	/^    def _build_patchers_from_mock_triples_decorator(function):$/;"	m	class:CassettePatcherBuilder
+_build_path_from_func_using_module	vcr/config.py	/^    def _build_path_from_func_using_module(function):$/;"	m	class:VCR
+_checker_transformer_pairs	vcr/matchers.py	/^_checker_transformer_pairs = ($/;"	v
+_convert_string_to_unicode	vcr/serializers/compat.py	/^def _convert_string_to_unicode(string):$/;"	f
+_cpoolBoto3HTTPConnection	vcr/patch.py	/^    _cpoolBoto3HTTPConnection = cpool.HTTPConnection$/;"	v
+_cpoolBoto3HTTPSConnection	vcr/patch.py	/^    _cpoolBoto3HTTPSConnection = cpool.HTTPSConnection$/;"	v
+_cpoolHTTPConnection	vcr/patch.py	/^    _cpoolHTTPConnection = cpool.HTTPConnection$/;"	v
+_cpoolHTTPSConnection	vcr/patch.py	/^    _cpoolHTTPSConnection = cpool.HTTPSConnection$/;"	v
+_execute_function	vcr/cassette.py	/^    def _execute_function(self, function, args, kwargs):$/;"	m	class:CassetteContextDecorator
+_find_header	tests/integration/test_filter.py	/^def _find_header(cassette, header):$/;"	f
+_from_dict	vcr/request.py	/^    def _from_dict(cls, dct):$/;"	m	class:Request
+_get_cassette_subclass	vcr/patch.py	/^    def _get_cassette_subclass(self, klass):$/;"	m	class:CassettePatcherBuilder
+_get_matchers	vcr/config.py	/^    def _get_matchers(self, matcher_names):$/;"	m	class:VCR
+_get_serializer	vcr/config.py	/^    def _get_serializer(self, serializer_name):$/;"	m	class:VCR
+_get_transformer	vcr/matchers.py	/^def _get_transformer(request):$/;"	f
+_handle_function	vcr/cassette.py	/^    def _handle_function(self, fn):$/;"	m	class:CassetteContextDecorator
+_handle_generator	vcr/cassette.py	/^    def _handle_generator(self, fn):$/;"	m	class:CassetteContextDecorator
+_header_checker	vcr/matchers.py	/^def _header_checker(value, header='Content-Type'):$/;"	f
+_headers_are_case_insensitive	tests/integration/test_stubs.py	/^def _headers_are_case_insensitive(host, port):$/;"	f
+_httplib	vcr/patch.py	/^    def _httplib(self):$/;"	m	class:CassettePatcherBuilder
+_httplib2	vcr/patch.py	/^    def _httplib2(self):$/;"	m	class:CassettePatcherBuilder
+_identity	vcr/matchers.py	/^def _identity(x):$/;"	f
+_list_of_tuples_to_dict	vcr/migration.py	/^def _list_of_tuples_to_dict(fs):$/;"	f
+_load	vcr/cassette.py	/^    def _load(self):$/;"	m	class:Cassette
+_log_matches	vcr/matchers.py	/^def _log_matches(r1, r2, matches):$/;"	f
+_looks_like_an_old_cassette	vcr/serialize.py	/^def _looks_like_an_old_cassette(data):$/;"	f
+_make_before_record_response	tests/integration/test_stubs.py	/^def _make_before_record_response(fields, replacement='[REDACTED]'):$/;"	f
+_migrate	vcr/migration.py	/^def _migrate(data):$/;"	f
+_mock_requests_match	tests/unit/test_cassettes.py	/^def _mock_requests_match(request1, request2, matchers):$/;"	f
+_multiple_header_value	tests/integration/test_stubs.py	/^def _multiple_header_value(httpbin):$/;"	f
+_non_cassette_arguments	vcr/cassette.py	/^    _non_cassette_arguments = ('path_transformer', 'func_path_generator')$/;"	v	class:CassetteContextDecorator
+_patch_generator	vcr/cassette.py	/^    def _patch_generator(self, cassette):$/;"	m	class:CassetteContextDecorator
+_patched_get_conn	vcr/patch.py	/^    def _patched_get_conn(self, connection_pool_class, connection_class_getter):$/;"	m	class:CassettePatcherBuilder
+_patched_new_conn	vcr/patch.py	/^    def _patched_new_conn(self, connection_pool_class, connection_remover):$/;"	m	class:CassettePatcherBuilder
+_port_postfix	vcr/stubs/__init__.py	/^    def _port_postfix(self):$/;"	m	class:VCRConnection
+_pretend_to_be_flickr_library	tests/integration/test_wild.py	/^    def _pretend_to_be_flickr_library():$/;"	f	function:test_flickr_multipart_upload
+_protocol	vcr/stubs/__init__.py	/^    _protocol = 'http'$/;"	v	class:VCRHTTPConnection
+_protocol	vcr/stubs/__init__.py	/^    _protocol = 'https'$/;"	v	class:VCRHTTPSConnection
+_recursively_apply_get_cassette_subclass	vcr/patch.py	/^    def _recursively_apply_get_cassette_subclass(self, replacement_dict_or_obj):$/;"	m	class:CassettePatcherBuilder
+_replace_httpbin	tests/integration/test_matchers.py	/^def _replace_httpbin(uri, httpbin, httpbin_secure):$/;"	f
+_request_with_auth	tests/integration/test_filter.py	/^def _request_with_auth(url, username, password):$/;"	f
+_requests	vcr/patch.py	/^    def _requests(self):$/;"	m	class:CassettePatcherBuilder
+_responses	vcr/cassette.py	/^    def _responses(self, request):$/;"	m	class:Cassette
+_save	vcr/cassette.py	/^    def _save(self, force=False):$/;"	m	class:Cassette
+_to_dict	vcr/request.py	/^    def _to_dict(self):$/;"	m	class:Request
+_tornado	vcr/patch.py	/^    def _tornado(self):$/;"	m	class:CassettePatcherBuilder
+_transform_json	vcr/matchers.py	/^def _transform_json(body):$/;"	f
+_uri	vcr/stubs/__init__.py	/^    def _uri(self, url):$/;"	m	class:VCRConnection
+_url	vcr/stubs/__init__.py	/^    def _url(self, uri):$/;"	m	class:VCRConnection
+_urllib3	vcr/patch.py	/^    def _urllib3(self):$/;"	m	class:CassettePatcherBuilder
+_urllib3_patchers	vcr/patch.py	/^    def _urllib3_patchers(self, cpool, stubs):$/;"	m	class:CassettePatcherBuilder
+_use_cassette	vcr/config.py	/^    def _use_cassette(self, with_current_defaults=False, **kwargs):$/;"	m	class:VCR
+_warn_about_old_cassette_format	vcr/serialize.py	/^def _warn_about_old_cassette_format():$/;"	f
+_xml_header_checker	vcr/matchers.py	/^_xml_header_checker = _header_checker('text\/xml')$/;"	v
+_xmlrpc_header_checker	vcr/matchers.py	/^_xmlrpc_header_checker = _header_checker('xmlrpc', header='User-Agent')$/;"	v
+add_cassette_library_dir	vcr/config.py	/^            def add_cassette_library_dir(path):$/;"	f	function:VCR.get_merged_config
+add_connection_to_pool_entry	vcr/patch.py	/^    def add_connection_to_pool_entry(self, pool, connection):$/;"	m	class:ConnectionRemover
+add_header	vcr/request.py	/^    def add_header(self, key, value):$/;"	m	class:Request
+aiohttp	tests/integration/test_aiohttp.py	/^aiohttp = pytest.importorskip("aiohttp")$/;"	v
+aiohttp_app	tests/integration/aiohttp_utils.py	/^def aiohttp_app():$/;"	f
+aiohttp_request	tests/integration/aiohttp_utils.py	/^async def aiohttp_request(loop, method, url, output='text', encoding='utf-8', content_type=None, **kwargs):$/;"	f
+all_played	vcr/cassette.py	/^    def all_played(self):$/;"	m	class:Cassette
+append	vcr/cassette.py	/^    def append(self, request, response):$/;"	m	class:Cassette
+assert_cassette_empty	tests/assertions.py	/^def assert_cassette_empty(cass):$/;"	f
+assert_cassette_has_one_response	tests/assertions.py	/^def assert_cassette_has_one_response(cass):$/;"	f
+assert_get_response_body_is	tests/unit/test_cassettes.py	/^def assert_get_response_body_is(value):$/;"	f
+assert_is_json	tests/assertions.py	/^def assert_is_json(a_string):$/;"	f
+assert_matcher	tests/unit/test_matchers.py	/^def assert_matcher(matcher_name):$/;"	f
+assert_record_mode_all	tests/unit/test_vcr.py	/^    def assert_record_mode_all(cassette):$/;"	f	function:test_with_current_defaults
+assert_record_mode_once	tests/unit/test_vcr.py	/^    def assert_record_mode_once(cassette):$/;"	f	function:test_with_current_defaults
+asyncio	tests/integration/test_aiohttp.py	/^asyncio = pytest.importorskip("asyncio")$/;"	v
+attribute	tests/unit/test_cassettes.py	/^        attribute = None$/;"	v	class:test_custom_patchers.Test
+attribute	tests/unit/test_vcr.py	/^        attribute = None$/;"	v	class:test_custom_patchers.Test
+attribute2	tests/unit/test_vcr.py	/^        attribute2 = None$/;"	v	class:test_custom_patchers.Test
+author	docs/conf.py	/^author = u'Kevin McCarthy'$/;"	v
+author	setup.py	/^    author='Kevin McCarthy',$/;"	v	class:PyTest
+author_email	setup.py	/^    author_email='me@kevinmccarthy.org',$/;"	v	class:PyTest
+auto_decorate	vcr/util.py	/^def auto_decorate($/;"	f
+before_record_cb	tests/integration/test_filter.py	/^    def before_record_cb(request):$/;"	f	function:test_filter_callback
+before_record_cb	tests/unit/test_vcr.py	/^    def before_record_cb(request):$/;"	f	function:test_vcr_before_record_request_params
+before_record_request	vcr/config.py	/^        def before_record_request(request):$/;"	f	function:VCR._build_before_record_request
+before_record_response	tests/integration/test_stubs.py	/^    def before_record_response(response):$/;"	f	function:_make_before_record_response
+before_record_response	vcr/config.py	/^        def before_record_response(response):$/;"	f	function:VCR._build_before_record_response
+body	vcr/matchers.py	/^def body(r1, r2):$/;"	f
+body	vcr/request.py	/^    def body(self):$/;"	m	class:Request
+body	vcr/request.py	/^    def body(self, value):$/;"	m	class:Request
+boto	tests/integration/test_boto.py	/^boto = pytest.importorskip("boto")$/;"	v
+boto3	tests/integration/test_boto3.py	/^boto3 = pytest.importorskip("boto3")$/;"	v
+bucket	tests/integration/test_boto3.py	/^bucket = 'boto3-demo-1337'              # a bucket you can access$/;"	v
+build	vcr/patch.py	/^    def build(self):$/;"	m	class:CassettePatcherBuilder
+build_uri	vcr/migration.py	/^def build_uri(**parts):$/;"	f
+cache	vcr/persisters/filesystem.py	/^    cache = {}$/;"	v	class:FilesystemPersister
+callback	tests/integration/test_tornado.py	/^    def callback(chunk):$/;"	f	function:test_unsupported_features_raise_error_disabled
+callback	tests/integration/test_tornado.py	/^    def callback(chunk):$/;"	f	function:test_unsupported_features_raises_in_future
+can_play_response_for	vcr/cassette.py	/^    def can_play_response_for(self, request):$/;"	m	class:Cassette
+cassette	tests/integration/test_matchers.py	/^def cassette(tmpdir, httpbin, httpbin_secure):$/;"	f
+cassette	vcr/stubs/__init__.py	/^    cassette = None$/;"	v	class:VCRConnection
+changing_defaults	tests/unit/test_vcr.py	/^    def changing_defaults(cassette, checks):$/;"	f	function:test_with_current_defaults
+checker	vcr/matchers.py	/^    def checker(headers):$/;"	f	function:_header_checker
+classifiers	setup.py	/^    classifiers=[$/;"	v	class:PyTest
+close	vcr/stubs/__init__.py	/^    def close(self):$/;"	m	class:VCRConnection
+close	vcr/stubs/__init__.py	/^    def close(self):$/;"	m	class:VCRFakeSocket
+close	vcr/stubs/__init__.py	/^    def close(self):$/;"	m	class:VCRHTTPResponse
+closed	vcr/stubs/__init__.py	/^    def closed(self):$/;"	m	class:VCRHTTPResponse
+compose	vcr/util.py	/^def compose(*functions):$/;"	f
+composed	vcr/util.py	/^    def composed(incoming):$/;"	f	function:compose
+connect	vcr/stubs/__init__.py	/^    def connect(self, *args, **kwargs):$/;"	m	class:VCRConnection
+content	tests/integration/test_boto3.py	/^content = 'hello world i am a string'   # content to put in the test file$/;"	v
+convert_body_to_bytes	vcr/serializers/compat.py	/^def convert_body_to_bytes(resp):$/;"	f
+convert_body_to_unicode	vcr/serializers/compat.py	/^def convert_body_to_unicode(resp):$/;"	f
+convert_to_bytes	vcr/serializers/compat.py	/^def convert_to_bytes(resp):$/;"	f
+convert_to_unicode	vcr/serializers/compat.py	/^def convert_to_unicode(resp):$/;"	f
+copy	vcr/util.py	/^    def copy(self):$/;"	m	class:CaseInsensitiveDict
+copyright	docs/conf.py	/^copyright = u'2015, Kevin McCarthy'$/;"	v
+cpool	vcr/patch.py	/^cpool = None$/;"	v
+current_defaults	tests/unit/test_vcr.py	/^    def current_defaults(cassette, checks):$/;"	f	function:test_with_current_defaults
+custom_patches	tests/unit/test_cassettes.py	/^                          custom_patches=((Test, 'attribute', VCRHTTPSConnection),)):$/;"	v	class:test_custom_patchers.Test
+custom_patches	tests/unit/test_cassettes.py	/^                      custom_patches=((Test, 'attribute', VCRHTTPSConnection),)):$/;"	v	class:test_custom_patchers.Test
+custom_patches	tests/unit/test_vcr.py	/^        custom_patches=((Test, 'attribute2', VCRHTTPSConnection),)$/;"	v	class:test_custom_patchers.Test
+decode_response	vcr/filters.py	/^def decode_response(response):$/;"	f
+decompress_body	vcr/filters.py	/^    def decompress_body(body, encoding):$/;"	f	function:decode_response
+default_vcr	vcr/__init__.py	/^default_vcr = VCR()$/;"	v
+description	setup.py	/^    description=($/;"	v	class:PyTest
+deserialize	tests/integration/test_register_serializer.py	/^    def deserialize(self, cassette_string):$/;"	m	class:MockSerializer
+deserialize	vcr/serialize.py	/^def deserialize(cassette_string, serializer):$/;"	f
+deserialize	vcr/serializers/jsonserializer.py	/^def deserialize(cassette_string):$/;"	f
+deserialize	vcr/serializers/yamlserializer.py	/^def deserialize(cassette_string):$/;"	f
+do_GET	tests/integration/test_proxy.py	/^    def do_GET(self):$/;"	m	class:Proxy
+emit	vcr/__init__.py	/^        def emit(self, record):$/;"	m	class:NullHandler
+endheaders	vcr/stubs/__init__.py	/^    def endheaders(self, message_body=None):$/;"	m	class:VCRConnection
+ensure	vcr/config.py	/^        def ensure(path):$/;"	f	function:VCR.ensure_suffix
+ensure_suffix	vcr/config.py	/^    def ensure_suffix(suffix):$/;"	m	class:VCR
+exclude_patterns	docs/conf.py	/^exclude_patterns = ['_build']$/;"	v
+excluded_packages	setup.py	/^excluded_packages = ["tests*"]$/;"	v
+extensions	docs/conf.py	/^extensions = [$/;"	v
+fake_getaddrinfo	tests/integration/test_ignore.py	/^    def fake_getaddrinfo(*args, **kwargs):$/;"	f	function:overridden_dns
+false_matcher	tests/integration/test_register_matcher.py	/^def false_matcher(r1, r2):$/;"	f
+fileno	vcr/stubs/__init__.py	/^    def fileno(self):$/;"	m	class:VCRFakeSocket
+filter_ignored_hosts	vcr/config.py	/^        def filter_ignored_hosts(request):$/;"	f	function:VCR._build_ignore_hosts
+filter_request	vcr/cassette.py	/^    def filter_request(self, request):$/;"	m	class:Cassette
+finalize_options	setup.py	/^    def finalize_options(self):$/;"	m	class:PyTest
+force_reset	vcr/patch.py	/^def force_reset():$/;"	f
+from_args	vcr/cassette.py	/^    def from_args(cls, cassette_class, **kwargs):$/;"	m	class:CassetteContextDecorator
+function	tests/unit/test_cassettes.py	/^    def function():$/;"	f	function:test_arg_getter_functionality
+function	tests/unit/test_vcr.py	/^        def function():$/;"	f	function:test_vcr_use_cassette
+function_additional	tests/unit/test_vcr.py	/^    def function_additional(cassette):$/;"	f	function:test_additional_matchers
+function_defaults	tests/unit/test_vcr.py	/^    def function_defaults(cassette):$/;"	f	function:test_additional_matchers
+function_name	tests/unit/test_cassettes.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_use_called_without_path_uses_function_to_generate_path
+function_name	tests/unit/test_cassettes.py	/^    def function_name(cassette):$/;"	f	function:test_func_path_generator
+function_name	tests/unit/test_cassettes.py	/^    def function_name(cassette):$/;"	f	function:test_path_transformer_with_function_path
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_library_dir_with_decoration_and_explicit_path
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_library_dir_with_decoration_and_no_explicit_path
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_library_dir_with_decoration_and_super_explicit_path
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_library_dir_with_path_transformer
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_cassette_name_generator_defaults_to_using_module_function_defined_in
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_ensure_suffix
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_path_transformer
+function_name	tests/unit/test_vcr.py	/^    def function_name(cassette):$/;"	f	function:test_use_cassette_with_no_extra_invocation
+function_with_return	tests/unit/test_vcr.py	/^    def function_with_return():$/;"	f	function:test_decoration_should_respect_function_return_value
+generator	tests/unit/test_cassettes.py	/^    def generator(function):$/;"	f	function:test_func_path_generator
+get	tests/integration/test_aiohttp.py	/^def get(url, output='text', **kwargs):$/;"	f
+get	tests/integration/test_tornado.py	/^def get(client, url, **kwargs):$/;"	f
+get_client	tests/integration/test_tornado.py	/^def get_client(request):$/;"	f
+get_function_name	vcr/cassette.py	/^    def get_function_name(function):$/;"	m	class:CassetteContextDecorator
+get_header	vcr/stubs/compat.py	/^def get_header(message, name):$/;"	f
+get_header_items	vcr/stubs/compat.py	/^def get_header_items(message):$/;"	f
+get_headers	vcr/stubs/compat.py	/^def get_headers(message):$/;"	f
+get_httpmessage	vcr/stubs/compat.py	/^def get_httpmessage(headers):$/;"	f
+get_merged_config	vcr/config.py	/^    def get_merged_config(self, **kwargs):$/;"	m	class:VCR
+getcode	vcr/stubs/__init__.py	/^    def getcode(self):$/;"	m	class:VCRHTTPResponse
+getheader	vcr/stubs/__init__.py	/^    def getheader(self, header, default=None):$/;"	m	class:VCRHTTPResponse
+getheaders	vcr/stubs/__init__.py	/^    def getheaders(self):$/;"	m	class:VCRHTTPResponse
+getresponse	vcr/stubs/__init__.py	/^    def getresponse(self, _=False, **kwargs):$/;"	m	class:VCRConnection
+handle_coroutine	vcr/_handle_coroutine.py	/^async def handle_coroutine(vcr, fn):  # noqa: E999$/;"	f
+handle_coroutine	vcr/cassette.py	/^    def handle_coroutine(*args, **kwags):$/;"	f
+handle_function	vcr/cassette.py	/^        def handle_function(cassette):$/;"	f	function:CassetteContextDecorator._execute_function
+headers	vcr/matchers.py	/^def headers(r1, r2):$/;"	f
+headers	vcr/request.py	/^    def headers(self):$/;"	m	class:Request
+headers	vcr/request.py	/^    def headers(self, value):$/;"	m	class:Request
+hello	tests/integration/aiohttp_utils.py	/^    async def hello(request):$/;"	f	function:aiohttp_app
+host	vcr/matchers.py	/^def host(r1, r2):$/;"	f
+host	vcr/request.py	/^    def host(self):$/;"	m	class:Request
+html_static_path	docs/conf.py	/^html_static_path = ['_static']$/;"	v
+html_theme	docs/conf.py	/^    html_theme = 'sphinx_rtd_theme'$/;"	v
+html_theme_path	docs/conf.py	/^    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]$/;"	v
+htmlhelp_basename	docs/conf.py	/^htmlhelp_basename = 'vcrpydoc'$/;"	v
+http	tests/integration/test_httplib2.py	/^def http():$/;"	f
+http	tests/integration/test_tornado.py	/^http = pytest.importorskip("tornado.httpclient")$/;"	v
+httplib2	tests/integration/test_httplib2.py	/^httplib2 = pytest.importorskip("httplib2")$/;"	v
+info	vcr/stubs/__init__.py	/^    def info(self):$/;"	m	class:VCRHTTPResponse
+inner1	tests/integration/test_httplib2.py	/^    def inner1():$/;"	f	function:test_decorator
+inner1	tests/integration/test_urllib2.py	/^    def inner1():$/;"	f	function:test_decorator
+inner2	tests/integration/test_httplib2.py	/^    def inner2():$/;"	f	function:test_decorator
+inner2	tests/integration/test_urllib2.py	/^    def inner2():$/;"	f	function:test_decorator
+install_requires	setup.py	/^    install_requires=install_requires,$/;"	v	class:PyTest
+install_requires	setup.py	/^install_requires = [$/;"	v
+intersphinx_mapping	docs/conf.py	/^intersphinx_mapping = {'https:\/\/docs.python.org\/': None}$/;"	v
+is_compressed	vcr/filters.py	/^    def is_compressed(headers):$/;"	f	function:decode_response
+is_test_method	vcr/config.py	/^    def is_test_method(method_name, function):$/;"	m	class:VCR
+is_verified	vcr/stubs/__init__.py	/^    is_verified = True$/;"	v	class:VCRHTTPSConnection
+isclosed	vcr/stubs/__init__.py	/^    def isclosed(self):$/;"	m	class:VCRHTTPResponse
+iscoroutinefunction	vcr/cassette.py	/^    def iscoroutinefunction(*args, **kwargs):$/;"	f
+json	vcr/stubs/aiohttp_stubs/__init__.py	/^    async def json(self, *, encoding='utf-8', loads=json.loads, **kwargs):  # NOQA: E999$/;"	m	class:MockClientResponse
+key	tests/integration/test_boto3.py	/^key = 'test\/my_test.txt'                # key with r+w access$/;"	v
+language	docs/conf.py	/^language = None$/;"	v
+latex_documents	docs/conf.py	/^latex_documents = [$/;"	v
+latex_elements	docs/conf.py	/^latex_elements = {$/;"	v
+license	setup.py	/^    license='MIT',$/;"	v	class:PyTest
+load	vcr/cassette.py	/^    def load(cls, **kwargs):$/;"	m	class:Cassette
+load_cassette	tests/integration/test_register_persister.py	/^    def load_cassette(cassette_path, serializer):$/;"	m	class:CustomFilesystemPersister
+load_cassette	vcr/persisters/filesystem.py	/^    def load_cassette(cls, cassette_path, serializer):$/;"	m	class:FilesystemPersister
+log	vcr/cassette.py	/^log = logging.getLogger(__name__)$/;"	v
+log	vcr/matchers.py	/^log = logging.getLogger(__name__)$/;"	v
+log	vcr/stubs/__init__.py	/^log = logging.getLogger(__name__)$/;"	v
+long_description	setup.py	/^    long_description=long_description,$/;"	v	class:PyTest
+long_description	setup.py	/^long_description = open('README.rst', 'r').read()$/;"	v
+lower_items	vcr/util.py	/^    def lower_items(self):$/;"	m	class:CaseInsensitiveDict
+main	vcr/migration.py	/^def main():$/;"	f
+make_get_request	tests/unit/test_cassettes.py	/^def make_get_request():$/;"	f
+man_pages	docs/conf.py	/^man_pages = [$/;"	v
+master_doc	docs/conf.py	/^master_doc = 'index'$/;"	v
+maybe_decorate	vcr/util.py	/^    def maybe_decorate(attribute, value):$/;"	f
+method	vcr/matchers.py	/^def method(r1, r2):$/;"	f
+migrate	vcr/migration.py	/^def migrate(file_path, migration_fn):$/;"	f
+migrate_json	vcr/migration.py	/^def migrate_json(in_fp, out_fp):$/;"	f
+migrate_yml	vcr/migration.py	/^def migrate_yml(in_fp, out_fp):$/;"	f
+name	setup.py	/^    name='vcrpy',$/;"	v	class:PyTest
+new_args_getter	vcr/cassette.py	/^        def new_args_getter():$/;"	f	function:CassetteContextDecorator._build_args_getter_for_decorator
+new_callback	vcr/stubs/tornado_stubs.py	/^            def new_callback(response):$/;"	f	function:vcr_fetch_impl.new_fetch_impl
+new_fetch_impl	vcr/stubs/tornado_stubs.py	/^    def new_fetch_impl(self, request, callback):$/;"	f	function:vcr_fetch_impl
+new_request	vcr/stubs/aiohttp_stubs/__init__.py	/^    async def new_request(self, method, url, **kwargs):$/;"	f	function:vcr_request
+no_decoration	tests/unit/test_vcr.py	/^    def no_decoration(self):$/;"	m	class:TestVCRClass
+old_attribute	tests/unit/test_cassettes.py	/^        old_attribute = Test.attribute$/;"	v	class:test_custom_patchers.Test
+overridden_dns	tests/integration/test_ignore.py	/^def overridden_dns(overrides):$/;"	f
+packages	setup.py	/^    packages=find_packages(exclude=excluded_packages),$/;"	v	class:PyTest
+parse_headers	vcr/stubs/__init__.py	/^def parse_headers(header_list):$/;"	f
+partition_dict	vcr/util.py	/^def partition_dict(predicate, dictionary):$/;"	f
+patched_get_conn	vcr/patch.py	/^        def patched_get_conn(pool, timeout=None):$/;"	f	function:CassettePatcherBuilder._patched_get_conn
+patched_new_conn	vcr/patch.py	/^        def patched_new_conn(pool):$/;"	f	function:CassettePatcherBuilder._patched_new_conn
+path	vcr/matchers.py	/^def path(r1, r2):$/;"	f
+path	vcr/request.py	/^    def path(self):$/;"	m	class:Request
+path_transformer	tests/unit/test_cassettes.py	/^    def path_transformer(path):$/;"	f	function:test_path_transformer_with_function_path
+play_count	vcr/cassette.py	/^    def play_count(self):$/;"	m	class:Cassette
+play_response	vcr/cassette.py	/^    def play_response(self, request):$/;"	m	class:Cassette
+pool_mgr	tests/integration/test_urllib3.py	/^def pool_mgr():$/;"	f
+port	vcr/matchers.py	/^def port(r1, r2):$/;"	f
+port	vcr/request.py	/^    def port(self):$/;"	m	class:Request
+post	tests/integration/test_aiohttp.py	/^def post(url, output='text', **kwargs):$/;"	f
+post	tests/integration/test_tornado.py	/^def post(client, url, data=None, **kwargs):$/;"	f
+preprocess_yaml	vcr/migration.py	/^def preprocess_yaml(cassette):$/;"	f
+project	docs/conf.py	/^project = u'vcrpy'$/;"	v
+protocol	vcr/request.py	/^    def protocol(self):$/;"	m	class:Request
+proxy_server	tests/integration/test_proxy.py	/^def proxy_server():$/;"	f
+putheader	vcr/stubs/__init__.py	/^    def putheader(self, header, *values):$/;"	m	class:VCRConnection
+putrequest	vcr/stubs/__init__.py	/^    def putrequest(self, method, url, *args, **kwargs):$/;"	m	class:VCRConnection
+pygments_style	docs/conf.py	/^pygments_style = 'sphinx'$/;"	v
+query	vcr/matchers.py	/^def query(r1, r2):$/;"	f
+query	vcr/request.py	/^    def query(self):$/;"	m	class:Request
+random_fixture	tests/unit/test_vcr.py	/^def random_fixture():$/;"	f
+raw_body	vcr/matchers.py	/^def raw_body(r1, r2):$/;"	f
+read	vcr/stubs/__init__.py	/^    def read(self, *args, **kwargs):$/;"	m	class:VCRHTTPResponse
+read	vcr/stubs/aiohttp_stubs/__init__.py	/^    async def read(self):$/;"	m	class:MockClientResponse
+read_body	vcr/util.py	/^def read_body(request):$/;"	f
+readline	vcr/stubs/__init__.py	/^    def readline(self, *args, **kwargs):$/;"	m	class:VCRHTTPResponse
+reason	tests/integration/test_requests.py	/^                   reason='Fails on CPython 3.5')$/;"	v
+register_matcher	vcr/config.py	/^    def register_matcher(self, name, matcher):$/;"	m	class:VCR
+register_persister	vcr/config.py	/^    def register_persister(self, persister):$/;"	m	class:VCR
+register_serializer	vcr/config.py	/^    def register_serializer(self, name, serializer):$/;"	m	class:VCR
+release	docs/conf.py	/^release = '1.7.4'$/;"	v
+release	vcr/stubs/aiohttp_stubs/__init__.py	/^    def release(self):$/;"	m	class:MockClientResponse
+remove_connection_to_pool_entry	vcr/patch.py	/^    def remove_connection_to_pool_entry(self, pool, connection):$/;"	m	class:ConnectionRemover
+remove_headers	vcr/filters.py	/^def remove_headers(request, headers_to_remove):$/;"	f
+remove_post_data_parameters	vcr/filters.py	/^def remove_post_data_parameters(request, post_data_parameters_to_remove):$/;"	f
+remove_query_parameters	vcr/filters.py	/^def remove_query_parameters(request, query_parameters_to_remove):$/;"	f
+replace_headers	vcr/filters.py	/^def replace_headers(request, replacements):$/;"	f
+replace_post_data_parameters	vcr/filters.py	/^def replace_post_data_parameters(request, replacements):$/;"	f
+replace_query_parameters	vcr/filters.py	/^def replace_query_parameters(request, replacements):$/;"	f
+req1_body	tests/unit/test_matchers.py	/^req1_body = (b"<?xml version='1.0'?><methodCall><methodName>test<\/methodName>"$/;"	v
+req2_body	tests/unit/test_matchers.py	/^req2_body = (b"<?xml version='1.0'?><methodCall><methodName>test<\/methodName>"$/;"	v
+request	tests/integration/test_aiohttp.py	/^def request(method, url, output='text', **kwargs):$/;"	f
+request	vcr/stubs/__init__.py	/^    def request(self, method, url, body=None, headers=None, *args, **kwargs):$/;"	m	class:VCRConnection
+requests	tests/integration/test_proxy.py	/^requests = pytest.importorskip("requests")$/;"	v
+requests	tests/integration/test_requests.py	/^requests = pytest.importorskip("requests")$/;"	v
+requests	tests/integration/test_wild.py	/^requests = pytest.importorskip("requests")$/;"	v
+requests	vcr/cassette.py	/^    def requests(self):$/;"	m	class:Cassette
+requests_match	vcr/matchers.py	/^def requests_match(r1, r2, matchers):$/;"	f
+reset_patchers	vcr/patch.py	/^def reset_patchers():$/;"	f
+responses	vcr/cassette.py	/^    def responses(self):$/;"	m	class:Cassette
+responses_of	vcr/cassette.py	/^    def responses_of(self, request):$/;"	m	class:Cassette
+rpc_server	tests/integration/test_wild.py	/^def rpc_server():$/;"	f
+run	tests/integration/test_aiohttp.py	/^    def run(loop):$/;"	f	function:request
+run_in_loop	tests/integration/test_aiohttp.py	/^def run_in_loop(fn):$/;"	f
+run_tests	setup.py	/^    def run_tests(self):$/;"	m	class:PyTest
+save_cassette	tests/integration/test_register_persister.py	/^    def save_cassette(cassette_path, cassette_dict, serializer):$/;"	m	class:CustomFilesystemPersister
+save_cassette	vcr/persisters/filesystem.py	/^    def save_cassette(cassette_path, cassette_dict, serializer):$/;"	m	class:FilesystemPersister
+scheme	tests/integration/test_aiohttp.py	/^def scheme(request):$/;"	f
+scheme	tests/integration/test_tornado.py	/^def scheme(request):$/;"	f
+scheme	vcr/matchers.py	/^def scheme(r1, r2):$/;"	f
+scheme	vcr/request.py	/^    def scheme(self):$/;"	m	class:Request
+send	vcr/stubs/__init__.py	/^    def send(self, data):$/;"	m	class:VCRConnection
+serialize	tests/integration/test_register_serializer.py	/^    def serialize(self, cassette_dict):$/;"	m	class:MockSerializer
+serialize	vcr/serialize.py	/^def serialize(cassette_dict, serializer):$/;"	f
+serialize	vcr/serializers/jsonserializer.py	/^def serialize(cassette_dict):$/;"	f
+serialize	vcr/serializers/yamlserializer.py	/^def serialize(cassette_dict):$/;"	f
+serialize_headers	vcr/stubs/__init__.py	/^def serialize_headers(response):$/;"	f
+set_debuglevel	vcr/stubs/__init__.py	/^    def set_debuglevel(self, *args, **kwargs):$/;"	m	class:VCRConnection
+settimeout	vcr/stubs/__init__.py	/^    def settimeout(self, *args, **kwargs):$/;"	m	class:VCRFakeSocket
+side_effect	tests/unit/test_serialize.py	/^                   side_effect=UnicodeDecodeError('utf-8', b'unicode error in serialization',$/;"	v
+sock	vcr/stubs/__init__.py	/^    def sock(self):$/;"	m	class:VCRConnection
+sock	vcr/stubs/__init__.py	/^    def sock(self, value):$/;"	m	class:VCRConnection
+source_suffix	docs/conf.py	/^source_suffix = '.rst'$/;"	v
+templates_path	docs/conf.py	/^templates_path = ['_templates']$/;"	v
+test_HeadersDict	tests/unit/test_request.py	/^def test_HeadersDict():$/;"	f
+test_add_header_deprecated	tests/unit/test_request.py	/^def test_add_header_deprecated():$/;"	f
+test_additional_matchers	tests/unit/test_vcr.py	/^def test_additional_matchers():$/;"	f
+test_aiohttp_test_client	tests/integration/test_aiohttp.py	/^def test_aiohttp_test_client(aiohttp_client, tmpdir):$/;"	f
+test_all_record_mode	tests/integration/test_record_mode.py	/^def test_all_record_mode(tmpdir, httpbin):$/;"	f
+test_amazon_doctype	tests/integration/test_wild.py	/^def test_amazon_doctype(tmpdir):$/;"	f
+test_arg_getter_functionality	tests/unit/test_cassettes.py	/^def test_arg_getter_functionality():$/;"	f
+test_auth	tests/integration/test_requests.py	/^def test_auth(tmpdir, httpbin_both):$/;"	f
+test_auth	tests/integration/test_tornado.py	/^def test_auth(get_client, tmpdir, scheme):$/;"	f
+test_auth	tests/integration/test_urllib3.py	/^def test_auth(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_auth_failed	tests/integration/test_requests.py	/^def test_auth_failed(tmpdir, httpbin_both):$/;"	f
+test_auth_failed	tests/integration/test_tornado.py	/^def test_auth_failed(get_client, tmpdir, scheme):$/;"	f
+test_auth_failed	tests/integration/test_urllib3.py	/^def test_auth_failed(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_basic_json_use	tests/integration/test_basic.py	/^def test_basic_json_use(tmpdir, httpbin):$/;"	f
+test_before_record_response	tests/unit/test_cassettes.py	/^def test_before_record_response():$/;"	f
+test_before_record_response_as_filter	tests/unit/test_vcr.py	/^def test_before_record_response_as_filter():$/;"	f
+test_binary	tests/integration/test_aiohttp.py	/^def test_binary(tmpdir, scheme):$/;"	f
+test_body	tests/integration/test_requests.py	/^def test_body(tmpdir, httpbin_both):$/;"	f
+test_body	tests/integration/test_tornado.py	/^def test_body(get_client, tmpdir, scheme):$/;"	f
+test_body	tests/integration/test_urllib3.py	/^def test_body(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_body_match_does_not_match	tests/unit/test_matchers.py	/^def test_body_match_does_not_match(r1, r2):$/;"	f
+test_body_matcher_does_match	tests/unit/test_matchers.py	/^def test_body_matcher_does_match(r1, r2):$/;"	f
+test_boto3_without_vcr	tests/integration/test_boto3.py	/^def test_boto3_without_vcr():$/;"	f
+test_boto_hardcore_mode	tests/integration/test_boto.py	/^def test_boto_hardcore_mode(tmpdir):$/;"	f
+test_boto_hardcore_mode	tests/integration/test_boto3.py	/^def test_boto_hardcore_mode(tmpdir):$/;"	f
+test_boto_iam	tests/integration/test_boto.py	/^def test_boto_iam(tmpdir):$/;"	f
+test_boto_medium_difficulty	tests/integration/test_boto.py	/^def test_boto_medium_difficulty(tmpdir):$/;"	f
+test_boto_medium_difficulty	tests/integration/test_boto3.py	/^def test_boto_medium_difficulty(tmpdir):$/;"	f
+test_boto_stubs	tests/integration/test_boto.py	/^def test_boto_stubs(tmpdir):$/;"	f
+test_boto_stubs	tests/integration/test_boto3.py	/^def test_boto_stubs(tmpdir):$/;"	f
+test_boto_without_vcr	tests/integration/test_boto.py	/^def test_boto_without_vcr():$/;"	f
+test_cannot_overwrite_cassette_raise_error_disabled	tests/integration/test_tornado.py	/^def test_cannot_overwrite_cassette_raise_error_disabled(get_client, tmpdir):$/;"	f
+test_cannot_overwrite_cassette_raises_in_future	tests/integration/test_tornado.py	/^def test_cannot_overwrite_cassette_raises_in_future(get_client, tmpdir):$/;"	f
+test_case	vcr/config.py	/^    def test_case(self, predicate=None):$/;"	m	class:VCR
+test_case_insensitivity	tests/integration/test_stubs.py	/^def test_case_insensitivity(tmpdir, httpbin):$/;"	f
+test_cassette_all_played	tests/unit/test_cassettes.py	/^def test_cassette_all_played():$/;"	f
+test_cassette_append	tests/unit/test_cassettes.py	/^def test_cassette_append():$/;"	f
+test_cassette_cant_read_same_request_twice	tests/unit/test_cassettes.py	/^def test_cassette_cant_read_same_request_twice():$/;"	f
+test_cassette_contains	tests/unit/test_cassettes.py	/^def test_cassette_contains():$/;"	f
+test_cassette_get_missing_response	tests/unit/test_cassettes.py	/^def test_cassette_get_missing_response():$/;"	f
+test_cassette_len	tests/unit/test_cassettes.py	/^def test_cassette_len():$/;"	f
+test_cassette_library_dir_with_decoration_and_explicit_path	tests/unit/test_vcr.py	/^def test_cassette_library_dir_with_decoration_and_explicit_path():$/;"	f
+test_cassette_library_dir_with_decoration_and_no_explicit_path	tests/unit/test_vcr.py	/^def test_cassette_library_dir_with_decoration_and_no_explicit_path():$/;"	f
+test_cassette_library_dir_with_decoration_and_super_explicit_path	tests/unit/test_vcr.py	/^def test_cassette_library_dir_with_decoration_and_super_explicit_path():$/;"	f
+test_cassette_library_dir_with_path_transformer	tests/unit/test_vcr.py	/^def test_cassette_library_dir_with_path_transformer():$/;"	f
+test_cassette_load	tests/unit/test_cassettes.py	/^def test_cassette_load(tmpdir):$/;"	f
+test_cassette_name_generator_defaults_to_using_module_function_defined_in	tests/unit/test_vcr.py	/^def test_cassette_name_generator_defaults_to_using_module_function_defined_in():$/;"	f
+test_cassette_not_all_played	tests/unit/test_cassettes.py	/^def test_cassette_not_all_played():$/;"	f
+test_cassette_not_played	tests/unit/test_cassettes.py	/^def test_cassette_not_played():$/;"	f
+test_cassette_responses_of	tests/unit/test_cassettes.py	/^def test_cassette_responses_of():$/;"	f
+test_cassette_use_called_without_path_uses_function_to_generate_path	tests/unit/test_cassettes.py	/^def test_cassette_use_called_without_path_uses_function_to_generate_path():$/;"	f
+test_cookies	tests/integration/test_wild.py	/^def test_cookies(tmpdir, httpbin):$/;"	f
+test_cross_scheme	tests/integration/test_httplib2.py	/^def test_cross_scheme(tmpdir, httpbin, httpbin_secure):$/;"	f
+test_cross_scheme	tests/integration/test_requests.py	/^def test_cross_scheme(tmpdir, httpbin_secure, httpbin):$/;"	f
+test_cross_scheme	tests/integration/test_tornado.py	/^def test_cross_scheme(get_client, tmpdir, scheme):$/;"	f
+test_cross_scheme	tests/integration/test_urllib2.py	/^def test_cross_scheme(tmpdir, httpbin_secure, httpbin):$/;"	f
+test_cross_scheme	tests/integration/test_urllib3.py	/^def test_cross_scheme(tmpdir, httpbin, httpbin_secure, verify_pool_mgr):$/;"	f
+test_custom_patchers	tests/unit/test_cassettes.py	/^def test_custom_patchers():$/;"	f
+test_custom_patchers	tests/unit/test_vcr.py	/^def test_custom_patchers():$/;"	f
+test_decode_response_deflate	tests/unit/test_filters.py	/^def test_decode_response_deflate():$/;"	f
+test_decode_response_gzip	tests/unit/test_filters.py	/^def test_decode_response_gzip():$/;"	f
+test_decode_response_uncompressed	tests/unit/test_filters.py	/^def test_decode_response_uncompressed():$/;"	f
+test_decompress_deflate	tests/integration/test_filter.py	/^def test_decompress_deflate(tmpdir, httpbin):$/;"	f
+test_decompress_gzip	tests/integration/test_filter.py	/^def test_decompress_gzip(tmpdir, httpbin):$/;"	f
+test_decompress_regular	tests/integration/test_filter.py	/^def test_decompress_regular(tmpdir, httpbin):$/;"	f
+test_decorated_functions_are_reentrant	tests/unit/test_cassettes.py	/^def test_decorated_functions_are_reentrant():$/;"	f
+test_decoration_should_respect_function_return_value	tests/unit/test_vcr.py	/^def test_decoration_should_respect_function_return_value():$/;"	f
+test_decorator	tests/integration/test_httplib2.py	/^def test_decorator(tmpdir, httpbin_both):$/;"	f
+test_decorator	tests/integration/test_urllib2.py	/^def test_decorator(httpbin_both, tmpdir):$/;"	f
+test_default_matcher_does_not_match	tests/integration/test_matchers.py	/^def test_default_matcher_does_not_match(cassette, uri, httpbin, httpbin_secure):$/;"	f
+test_default_matcher_does_not_match_on_method	tests/integration/test_matchers.py	/^def test_default_matcher_does_not_match_on_method(cassette, httpbin, httpbin_secure):$/;"	f
+test_default_matcher_matches	tests/integration/test_matchers.py	/^def test_default_matcher_matches(cassette, uri, httpbin, httpbin_secure):$/;"	f
+test_default_set_cassette_library_dir	tests/integration/test_config.py	/^def test_default_set_cassette_library_dir(tmpdir, httpbin):$/;"	f
+test_deserialize_new_json_cassette	tests/unit/test_serialize.py	/^def test_deserialize_new_json_cassette():$/;"	f
+test_deserialize_new_yaml_cassette	tests/unit/test_serialize.py	/^def test_deserialize_new_yaml_cassette():$/;"	f
+test_deserialize_no_body_string	tests/unit/test_serialize.py	/^def test_deserialize_no_body_string():$/;"	f
+test_deserialize_old_json_cassette	tests/unit/test_serialize.py	/^def test_deserialize_old_json_cassette():$/;"	f
+test_deserialize_old_yaml_cassette	tests/unit/test_serialize.py	/^def test_deserialize_old_yaml_cassette():$/;"	f
+test_deserialize_py2py3_yaml_cassette	tests/unit/test_serialize.py	/^def test_deserialize_py2py3_yaml_cassette(tmpdir, req_body, expect):$/;"	f
+test_disk_saver_nowrite	tests/integration/test_disksaver.py	/^def test_disk_saver_nowrite(tmpdir, httpbin):$/;"	f
+test_disk_saver_write	tests/integration/test_disksaver.py	/^def test_disk_saver_write(tmpdir, httpbin):$/;"	f
+test_domain_redirect	tests/integration/test_wild.py	/^def test_domain_redirect():$/;"	f
+test_dynamically_added	tests/unit/test_vcr.py	/^def test_dynamically_added(self):$/;"	f
+test_effective_url	tests/integration/test_httplib2.py	/^def test_effective_url(tmpdir, httpbin_both):$/;"	f
+test_effective_url	tests/integration/test_requests.py	/^def test_effective_url(tmpdir, httpbin_both):$/;"	f
+test_effective_url	tests/integration/test_tornado.py	/^def test_effective_url(get_client, scheme, tmpdir):$/;"	f
+test_effective_url	tests/integration/test_urllib2.py	/^def test_effective_url(httpbin_both, tmpdir):$/;"	f
+test_ensure_suffix	tests/unit/test_vcr.py	/^def test_ensure_suffix():$/;"	f
+test_existing_instances_get_patched	tests/integration/test_tornado.py	/^def test_existing_instances_get_patched(get_client, tmpdir):$/;"	f
+test_existing_references_get_patched	tests/integration/test_tornado.py	/^def test_existing_references_get_patched(tmpdir):$/;"	f
+test_filter_basic_auth	tests/integration/test_filter.py	/^def test_filter_basic_auth(tmpdir, httpbin):$/;"	f
+test_filter_callback	tests/integration/test_filter.py	/^def test_filter_callback(tmpdir, httpbin):$/;"	f
+test_filter_json_post_data	tests/integration/test_filter.py	/^def test_filter_json_post_data(tmpdir, httpbin):$/;"	f
+test_filter_post_data	tests/integration/test_filter.py	/^def test_filter_post_data(tmpdir, httpbin):$/;"	f
+test_filter_post_params	tests/integration/test_requests.py	/^def test_filter_post_params(tmpdir, httpbin_both):$/;"	f
+test_filter_querystring	tests/integration/test_filter.py	/^def test_filter_querystring(tmpdir, httpbin):$/;"	f
+test_fixtures_with_use_cassette	tests/unit/test_vcr.py	/^def test_fixtures_with_use_cassette(random_fixture):$/;"	f
+test_flickr_multipart_upload	tests/integration/test_wild.py	/^def test_flickr_multipart_upload(httpbin, tmpdir):$/;"	f
+test_flickr_should_respond_with_200	tests/integration/test_wild.py	/^def test_flickr_should_respond_with_200(tmpdir):$/;"	f
+test_func_path_generator	tests/unit/test_cassettes.py	/^def test_func_path_generator():$/;"	f
+test_function	tests/unit/test_cassettes.py	/^    def test_function(cassette):$/;"	f	function:test_decorated_functions_are_reentrant
+test_function	tests/unit/test_cassettes.py	/^    def test_function(cassette):$/;"	f	function:test_use_as_decorator_on_coroutine
+test_function	tests/unit/test_cassettes.py	/^    def test_function(cassette):$/;"	f	function:test_use_as_decorator_on_generator
+test_function_decorated_with_use_cassette_can_be_invoked_multiple_times	tests/unit/test_cassettes.py	/^def test_function_decorated_with_use_cassette_can_be_invoked_multiple_times(*args):$/;"	f
+test_get_data	tests/integration/test_httplib2.py	/^def test_get_data(tmpdir, httpbin_both):$/;"	f
+test_get_data	tests/integration/test_urllib2.py	/^def test_get_data(httpbin_both, tmpdir):$/;"	f
+test_get_empty_content_type_json	tests/integration/test_requests.py	/^def test_get_empty_content_type_json(tmpdir, httpbin_both):$/;"	f
+test_gzip	tests/integration/test_requests.py	/^def test_gzip(tmpdir, httpbin_both):$/;"	f
+test_gzip	tests/integration/test_tornado.py	/^def test_gzip(get_client, tmpdir, scheme):$/;"	f
+test_gzip	tests/integration/test_urllib3.py	/^def test_gzip(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_headers	tests/integration/test_aiohttp.py	/^def test_headers(tmpdir, scheme):$/;"	f
+test_headers	tests/integration/test_requests.py	/^def test_headers(httpbin_both, tmpdir):$/;"	f
+test_headers	tests/integration/test_tornado.py	/^def test_headers(get_client, scheme, tmpdir):$/;"	f
+test_headers	tests/integration/test_urllib3.py	/^def test_headers(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_headers	tests/unit/test_request.py	/^def test_headers():$/;"	f
+test_https_with_cert_validation_disabled	tests/integration/test_requests.py	/^def test_https_with_cert_validation_disabled(tmpdir, httpbin_secure):$/;"	f
+test_https_with_cert_validation_disabled	tests/integration/test_tornado.py	/^def test_https_with_cert_validation_disabled(get_client, tmpdir):$/;"	f
+test_https_with_cert_validation_disabled	tests/integration/test_urllib3.py	/^def test_https_with_cert_validation_disabled(tmpdir, httpbin_secure, pool_mgr):$/;"	f
+test_ignore_httpbin	tests/integration/test_ignore.py	/^def test_ignore_httpbin(tmpdir, httpbin):$/;"	f
+test_ignore_localhost	tests/integration/test_ignore.py	/^def test_ignore_localhost(tmpdir, httpbin):$/;"	f
+test_ignore_localhost_and_httpbin	tests/integration/test_ignore.py	/^def test_ignore_localhost_and_httpbin(tmpdir, httpbin):$/;"	f
+test_ignore_localhost_twice	tests/integration/test_ignore.py	/^def test_ignore_localhost_twice(tmpdir, httpbin):$/;"	f
+test_inject_cassette	tests/unit/test_vcr.py	/^def test_inject_cassette():$/;"	f
+test_json	tests/integration/test_aiohttp.py	/^def test_json(tmpdir, scheme):$/;"	f
+test_load_cassette_with_custom_persister	tests/integration/test_register_persister.py	/^def test_load_cassette_with_custom_persister(tmpdir, httpbin):$/;"	f
+test_load_cassette_with_invalid_cassettes	tests/unit/test_persist.py	/^def test_load_cassette_with_invalid_cassettes(cassette_path, serializer):$/;"	f
+test_load_cassette_with_old_cassettes	tests/unit/test_persist.py	/^def test_load_cassette_with_old_cassettes(cassette_path, serializer):$/;"	f
+test_making_extra_request_raises_exception	tests/integration/test_multiple.py	/^def test_making_extra_request_raises_exception(tmpdir, httpbin):$/;"	f
+test_matchers	tests/integration/test_matchers.py	/^def test_matchers(httpbin, httpbin_secure, cassette, matcher, matching_uri, not_matching_uri):$/;"	f
+test_metchers	tests/unit/test_matchers.py	/^def test_metchers():$/;"	f
+test_method_matcher	tests/integration/test_matchers.py	/^def test_method_matcher(cassette, httpbin, httpbin_secure):$/;"	f
+test_missing_matcher	tests/integration/test_config.py	/^def test_missing_matcher():$/;"	f
+test_multiple_headers	tests/integration/test_stubs.py	/^def test_multiple_headers(tmpdir, httpbin):$/;"	f
+test_multiple_requests	tests/integration/test_httplib2.py	/^def test_multiple_requests(tmpdir, httpbin_both):$/;"	f
+test_multiple_requests	tests/integration/test_urllib2.py	/^def test_multiple_requests(httpbin_both, tmpdir):$/;"	f
+test_nested_cassettes_with_session_created_before_nesting	tests/integration/test_requests.py	/^def test_nested_cassettes_with_session_created_before_nesting(httpbin_both, tmpdir):$/;"	f
+test_nesting_cassette_context_managers	tests/unit/test_cassettes.py	/^def test_nesting_cassette_context_managers(*args):$/;"	f
+test_nesting_context_managers_by_checking_references_of_http_connection	tests/unit/test_cassettes.py	/^def test_nesting_context_managers_by_checking_references_of_http_connection():$/;"	f
+test_new_episodes_record_mode	tests/integration/test_record_mode.py	/^def test_new_episodes_record_mode(tmpdir, httpbin):$/;"	f
+test_new_episodes_record_mode_two_times	tests/integration/test_record_mode.py	/^def test_new_episodes_record_mode_two_times(tmpdir, httpbin):$/;"	f
+test_none_record_mode	tests/integration/test_record_mode.py	/^def test_none_record_mode(tmpdir, httpbin):$/;"	f
+test_none_record_mode_with_existing_cassette	tests/integration/test_record_mode.py	/^def test_none_record_mode_with_existing_cassette(tmpdir, httpbin):$/;"	f
+test_nonexistent_directory	tests/integration/test_basic.py	/^def test_nonexistent_directory(tmpdir, httpbin):$/;"	f
+test_once_mode_three_times	tests/integration/test_record_mode.py	/^def test_once_mode_three_times(tmpdir, httpbin):$/;"	f
+test_once_record_mode	tests/integration/test_record_mode.py	/^def test_once_record_mode(tmpdir, httpbin):$/;"	f
+test_once_record_mode_two_times	tests/integration/test_record_mode.py	/^def test_once_record_mode_two_times(tmpdir, httpbin):$/;"	f
+test_one	tests/unit/test_vcr.py	/^    def test_one(self):$/;"	m	class:TestVCRClass
+test_original_decoded_response_is_not_modified	tests/integration/test_stubs.py	/^def test_original_decoded_response_is_not_modified(tmpdir, httpbin):$/;"	f
+test_original_response_is_not_modified_by_before_filter	tests/integration/test_stubs.py	/^def test_original_response_is_not_modified_by_before_filter(tmpdir, httpbin):$/;"	f
+test_override_match_on	tests/integration/test_config.py	/^def test_override_match_on(tmpdir, httpbin):$/;"	f
+test_override_set_cassette_library_dir	tests/integration/test_config.py	/^def test_override_set_cassette_library_dir(tmpdir, httpbin):$/;"	f
+test_params	tests/integration/test_aiohttp.py	/^def test_params(tmpdir, scheme):$/;"	f
+test_params_on_url	tests/integration/test_aiohttp.py	/^def test_params_on_url(tmpdir, scheme):$/;"	f
+test_params_same_url_distinct_params	tests/integration/test_aiohttp.py	/^def test_params_same_url_distinct_params(tmpdir, scheme):$/;"	f
+test_patched_content	tests/integration/test_basic.py	/^def test_patched_content(tmpdir, httpbin):$/;"	f
+test_patched_content_json	tests/integration/test_basic.py	/^def test_patched_content_json(tmpdir, httpbin):$/;"	f
+test_path_transformer	tests/unit/test_vcr.py	/^def test_path_transformer():$/;"	f
+test_path_transformer_None	tests/unit/test_cassettes.py	/^def test_path_transformer_None():$/;"	f
+test_path_transformer_with_context_manager	tests/unit/test_cassettes.py	/^def test_path_transformer_with_context_manager():$/;"	f
+test_path_transformer_with_function_path	tests/unit/test_cassettes.py	/^def test_path_transformer_with_function_path():$/;"	f
+test_port	tests/unit/test_request.py	/^def test_port(uri, expected_port):$/;"	f
+test_post	tests/integration/test_aiohttp.py	/^def test_post(tmpdir, scheme):$/;"	f
+test_post	tests/integration/test_requests.py	/^def test_post(tmpdir, httpbin_both):$/;"	f
+test_post	tests/integration/test_tornado.py	/^def test_post(get_client, tmpdir, scheme):$/;"	f
+test_post	tests/integration/test_urllib3.py	/^def test_post(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_post_chunked_binary	tests/integration/test_requests.py	/^def test_post_chunked_binary(tmpdir, httpbin):$/;"	f
+test_post_chunked_binary_secure	tests/integration/test_requests.py	/^def test_post_chunked_binary_secure(tmpdir, httpbin_secure):$/;"	f
+test_post_data	tests/integration/test_httplib2.py	/^def test_post_data(tmpdir, httpbin_both):$/;"	f
+test_post_data	tests/integration/test_urllib2.py	/^def test_post_data(httpbin_both, tmpdir):$/;"	f
+test_post_file	tests/integration/test_requests.py	/^def test_post_file(tmpdir, httpbin_both):$/;"	f
+test_post_unicode_data	tests/integration/test_httplib2.py	/^def test_post_unicode_data(tmpdir, httpbin_both):$/;"	f
+test_post_unicode_data	tests/integration/test_urllib2.py	/^def test_post_unicode_data(httpbin_both, tmpdir):$/;"	f
+test_preserve_multiple_post_data_parameters	tests/unit/test_filters.py	/^def test_preserve_multiple_post_data_parameters():$/;"	f
+test_query_matcher	tests/unit/test_matchers.py	/^def test_query_matcher():$/;"	f
+test_random_body	tests/integration/test_httplib2.py	/^def test_random_body(httpbin_both, tmpdir):$/;"	f
+test_random_body	tests/integration/test_urllib2.py	/^def test_random_body(httpbin_both, tmpdir):$/;"	f
+test_recorded_request_uri_with_redirected_request	tests/integration/test_request.py	/^def test_recorded_request_uri_with_redirected_request(tmpdir, httpbin):$/;"	f
+test_records_multiple_header_values	tests/integration/test_request.py	/^def test_records_multiple_header_values(tmpdir, httpbin):$/;"	f
+test_redirects	tests/integration/test_requests.py	/^def test_redirects(tmpdir, httpbin_both):$/;"	f
+test_redirects	tests/integration/test_tornado.py	/^def test_redirects(get_client, tmpdir, scheme):$/;"	f
+test_redirects	tests/integration/test_urllib3.py	/^def test_redirects(tmpdir, httpbin_both, verify_pool_mgr):$/;"	f
+test_registered_false_matcher	tests/integration/test_register_matcher.py	/^def test_registered_false_matcher(tmpdir, httpbin):$/;"	f
+test_registered_serializer	tests/integration/test_register_serializer.py	/^def test_registered_serializer(tmpdir):$/;"	f
+test_registered_true_matcher	tests/integration/test_register_matcher.py	/^def test_registered_true_matcher(tmpdir, httpbin):$/;"	f
+test_remove_all_json_post_data_parameters	tests/unit/test_filters.py	/^def test_remove_all_json_post_data_parameters():$/;"	f
+test_remove_all_post_data_parameters	tests/unit/test_filters.py	/^def test_remove_all_post_data_parameters():$/;"	f
+test_remove_all_query_parameters	tests/unit/test_filters.py	/^def test_remove_all_query_parameters():$/;"	f
+test_remove_headers	tests/unit/test_filters.py	/^def test_remove_headers():$/;"	f
+test_remove_json_post_data_parameters	tests/unit/test_filters.py	/^def test_remove_json_post_data_parameters():$/;"	f
+test_remove_post_data_parameters	tests/unit/test_filters.py	/^def test_remove_post_data_parameters():$/;"	f
+test_remove_query_parameters	tests/unit/test_filters.py	/^def test_remove_query_parameters():$/;"	f
+test_replace_headers	tests/unit/test_filters.py	/^def test_replace_headers():$/;"	f
+test_replace_headers_callable	tests/unit/test_filters.py	/^def test_replace_headers_callable():$/;"	f
+test_replace_headers_empty	tests/unit/test_filters.py	/^def test_replace_headers_empty():$/;"	f
+test_replace_json_post_data_parameters	tests/unit/test_filters.py	/^def test_replace_json_post_data_parameters():$/;"	f
+test_replace_post_data_parameters	tests/unit/test_filters.py	/^def test_replace_post_data_parameters():$/;"	f
+test_replace_query_parameters	tests/unit/test_filters.py	/^def test_replace_query_parameters():$/;"	f
+test_replace_query_parameters_callable	tests/unit/test_filters.py	/^def test_replace_query_parameters_callable():$/;"	f
+test_request_time_is_set	tests/integration/test_tornado.py	/^def test_request_time_is_set(get_client, tmpdir):$/;"	f
+test_response_code	tests/integration/test_httplib2.py	/^def test_response_code(tmpdir, httpbin_both):$/;"	f
+test_response_code	tests/integration/test_urllib2.py	/^def test_response_code(httpbin_both, tmpdir):$/;"	f
+test_response_headers	tests/integration/test_httplib2.py	/^def test_response_headers(tmpdir, httpbin_both):$/;"	f
+test_response_headers	tests/integration/test_urllib2.py	/^def test_response_headers(httpbin_both, tmpdir):$/;"	f
+test_response_headers_should_be_equal_to_msg	tests/unit/test_response.py	/^def test_response_headers_should_be_equal_to_msg():$/;"	f
+test_response_headers_should_have_correct_values	tests/unit/test_response.py	/^def test_response_headers_should_have_correct_values():$/;"	f
+test_response_should_have_headers_field	tests/unit/test_response.py	/^def test_response_should_have_headers_field():$/;"	f
+test_save_cassette_with_custom_persister	tests/integration/test_register_persister.py	/^def test_save_cassette_with_custom_persister(tmpdir, httpbin):$/;"	f
+test_serialize_binary	tests/unit/test_json_serializer.py	/^def test_serialize_binary():$/;"	f
+test_serialize_binary_request	tests/unit/test_serialize.py	/^def test_serialize_binary_request():$/;"	f
+test_serialize_constructs_UnicodeDecodeError	tests/unit/test_serialize.py	/^def test_serialize_constructs_UnicodeDecodeError(mock_dumps):$/;"	f
+test_serialize_empty_request	tests/unit/test_serialize.py	/^def test_serialize_empty_request():$/;"	f
+test_serialize_json_request	tests/unit/test_serialize.py	/^def test_serialize_json_request():$/;"	f
+test_session_and_connection_close	tests/integration/test_requests.py	/^def test_session_and_connection_close(tmpdir, httpbin):$/;"	f
+test_session_can_make_requests_after_requests_unpatched	tests/integration/test_requests.py	/^def test_session_can_make_requests_after_requests_unpatched(tmpdir, httpbin):$/;"	f
+test_session_created_before_use_cassette_is_patched	tests/integration/test_requests.py	/^def test_session_created_before_use_cassette_is_patched(tmpdir, httpbin_both):$/;"	f
+test_set_serializer_default_config	tests/integration/test_config.py	/^def test_set_serializer_default_config(tmpdir, httpbin):$/;"	f
+test_setting_of_attributes_get_propogated_to_real_connection	tests/unit/test_stubs.py	/^    def test_setting_of_attributes_get_propogated_to_real_connection(self):$/;"	m	class:TestVCRConnection
+test_status	tests/integration/test_aiohttp.py	/^def test_status(tmpdir, scheme):$/;"	f
+test_status_code	tests/integration/test_requests.py	/^def test_status_code(httpbin_both, tmpdir):$/;"	f
+test_status_code	tests/integration/test_tornado.py	/^def test_status_code(get_client, scheme, tmpdir):$/;"	f
+test_status_code	tests/integration/test_urllib3.py	/^def test_status_code(httpbin_both, tmpdir, verify_pool_mgr):$/;"	f
+test_str	tests/unit/test_request.py	/^def test_str():$/;"	f
+test_text	tests/integration/test_aiohttp.py	/^def test_text(tmpdir, scheme):$/;"	f
+test_tornado_exception_can_be_caught	tests/integration/test_tornado.py	/^def test_tornado_exception_can_be_caught(get_client):$/;"	f
+test_tornado_with_decorator_use_cassette	tests/integration/test_tornado.py	/^def test_tornado_with_decorator_use_cassette(get_client):$/;"	f
+test_try_migrate_with_invalid_or_new_cassettes	tests/unit/test_migration.py	/^def test_try_migrate_with_invalid_or_new_cassettes(tmpdir):$/;"	f
+test_try_migrate_with_json	tests/unit/test_migration.py	/^def test_try_migrate_with_json(tmpdir):$/;"	f
+test_try_migrate_with_yaml	tests/unit/test_migration.py	/^def test_try_migrate_with_yaml(tmpdir):$/;"	f
+test_two	tests/unit/test_vcr.py	/^    def test_two(self):$/;"	m	class:TestVCRClass
+test_unpatch	tests/integration/test_basic.py	/^def test_unpatch(tmpdir, httpbin):$/;"	f
+test_unsupported_features_raise_error_disabled	tests/integration/test_tornado.py	/^def test_unsupported_features_raise_error_disabled(get_client, tmpdir):$/;"	f
+test_unsupported_features_raises_in_future	tests/integration/test_tornado.py	/^def test_unsupported_features_raises_in_future(get_client, tmpdir):$/;"	f
+test_uri	tests/unit/test_request.py	/^def test_uri():$/;"	f
+test_uri_matcher	tests/unit/test_matchers.py	/^def test_uri_matcher():$/;"	f
+test_urllib3_force_reset	tests/integration/test_urllib3.py	/^def test_urllib3_force_reset():$/;"	f
+test_use_as_decorator_on_coroutine	tests/unit/test_cassettes.py	/^def test_use_as_decorator_on_coroutine():$/;"	f
+test_use_as_decorator_on_generator	tests/unit/test_cassettes.py	/^def test_use_as_decorator_on_generator():$/;"	f
+test_use_cassette_with_no_extra_invocation	tests/unit/test_vcr.py	/^def test_use_cassette_with_no_extra_invocation():$/;"	f
+test_use_proxy	tests/integration/test_proxy.py	/^def test_use_proxy(tmpdir, httpbin, proxy_server):$/;"	f
+test_vcr_before_record_request_params	tests/unit/test_vcr.py	/^def test_vcr_before_record_request_params():$/;"	f
+test_vcr_before_record_response_iterable	tests/unit/test_vcr.py	/^def test_vcr_before_record_response_iterable():$/;"	f
+test_vcr_path_transformer	tests/unit/test_vcr.py	/^def test_vcr_path_transformer():$/;"	f
+test_vcr_use_cassette	tests/unit/test_vcr.py	/^def test_vcr_use_cassette():$/;"	f
+test_with_current_defaults	tests/unit/test_vcr.py	/^def test_with_current_defaults():$/;"	f
+test_xmlrpclib	tests/integration/test_wild.py	/^def test_xmlrpclib(tmpdir, rpc_server):$/;"	f
+testing_connect	tests/unit/test_stubs.py	/^    def testing_connect(*args):$/;"	m	class:TestVCRConnection
+tests_require	setup.py	/^    tests_require=['pytest', 'mock', 'pytest-httpbin'],$/;"	v	class:PyTest
+texinfo_documents	docs/conf.py	/^texinfo_documents = [$/;"	v
+text	vcr/stubs/aiohttp_stubs/__init__.py	/^    async def text(self, encoding='utf-8', errors='strict'):$/;"	m	class:MockClientResponse
+todo_include_todos	docs/conf.py	/^todo_include_todos = False$/;"	v
+tornado	tests/integration/test_tornado.py	/^tornado = pytest.importorskip("tornado")$/;"	v
+true_matcher	tests/integration/test_register_matcher.py	/^def true_matcher(r1, r2):$/;"	f
+try_migrate	vcr/migration.py	/^def try_migrate(path):$/;"	f
+uri	vcr/matchers.py	/^def uri(r1, r2):$/;"	f
+url	setup.py	/^    url='https:\/\/github.com\/kevin1024\/vcrpy',$/;"	v	class:PyTest
+url	vcr/request.py	/^    def url(self):$/;"	m	class:Request
+urllib3	tests/integration/test_urllib3.py	/^urllib3 = pytest.importorskip("urllib3")$/;"	v
+urlopen_with_cafile	tests/integration/test_urllib2.py	/^def urlopen_with_cafile(*args, **kwargs):$/;"	f
+use	vcr/cassette.py	/^    def use(cls, **kwargs):$/;"	m	class:Cassette
+use_arg_getter	vcr/cassette.py	/^    def use_arg_getter(cls, arg_getter):$/;"	m	class:Cassette
+use_cassette	vcr/__init__.py	/^use_cassette = default_vcr.use_cassette$/;"	v
+use_cassette	vcr/config.py	/^    def use_cassette(self, path=None, **kwargs):$/;"	m	class:VCR
+vcr_fetch_impl	vcr/stubs/tornado_stubs.py	/^def vcr_fetch_impl(cassette, real_fetch_impl):$/;"	f
+vcr_request	vcr/stubs/aiohttp_stubs/__init__.py	/^def vcr_request(cassette, real_request):$/;"	f
+verify_pool_mgr	tests/integration/test_urllib3.py	/^def verify_pool_mgr():$/;"	f
+version	docs/conf.py	/^version = '1.7.4'$/;"	v
+version	setup.py	/^    version='2.0.1',$/;"	v	class:PyTest
+with_cassette_injected	tests/unit/test_vcr.py	/^    def with_cassette_injected(cassette):$/;"	f	function:test_inject_cassette
+without_cassette_injected	tests/unit/test_vcr.py	/^    def without_cassette_injected():$/;"	f	function:test_inject_cassette
+wrapped	vcr/patch.py	/^        def wrapped(self, *args, **kwargs):$/;"	f	function:CassettePatcherBuilder._build_patchers_from_mock_triples_decorator
+write_protected	vcr/cassette.py	/^    def write_protected(self):$/;"	m	class:Cassette

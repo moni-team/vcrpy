@@ -1,10 +1,12 @@
+import collections
+import copy
 import sys
 import inspect
 import logging
 
 import wrapt
 
-from .compat import contextlib, collections
+from .compat import contextlib
 from .errors import UnhandledHTTPRequestError
 from .matchers import requests_match, uri, method
 from .patch import CassettePatcherBuilder
@@ -14,11 +16,13 @@ from .util import partition_dict
 
 try:
     from asyncio import iscoroutinefunction
-    from ._handle_coroutine import handle_coroutine
 except ImportError:
     def iscoroutinefunction(*args, **kwargs):
         return False
 
+if sys.version_info[:2] >= (3, 5):
+    from ._handle_coroutine import handle_coroutine
+else:
     def handle_coroutine(*args, **kwags):
         raise NotImplementedError('Not implemented on Python 2')
 
@@ -134,7 +138,10 @@ class CassetteContextDecorator(object):
                 except Exception:
                     to_yield = coroutine.throw(*sys.exc_info())
                 else:
-                    to_yield = coroutine.send(to_send)
+                    try:
+                        to_yield = coroutine.send(to_send)
+                    except StopIteration:
+                        break
 
     def _handle_function(self, fn):
         with self as cassette:
@@ -174,13 +181,13 @@ class Cassette(object):
     def use(cls, **kwargs):
         return CassetteContextDecorator.from_args(cls, **kwargs)
 
-    def __init__(self, path, serializer=yamlserializer, persister=FilesystemPersister, record_mode='once',
+    def __init__(self, path, serializer=None, persister=None, record_mode='once',
                  match_on=(uri, method), before_record_request=None,
                  before_record_response=None, custom_patches=(),
                  inject=False, allow_replay=False):
-        self._persister = persister
+        self._persister = persister or FilesystemPersister
         self._path = path
-        self._serializer = serializer
+        self._serializer = serializer or yamlserializer
         self._match_on = match_on
         self._before_record_request = before_record_request or (lambda x: x)
         self._before_record_response = before_record_response or (lambda x: x)
@@ -222,6 +229,9 @@ class Cassette(object):
         request = self._before_record_request(request)
         if not request:
             return
+        # Deepcopy is here because mutation of `response` will corrupt the
+        # real response.
+        response = copy.deepcopy(response)
         response = self._before_record_response(response)
         if response is None:
             return
@@ -304,7 +314,7 @@ class Cassette(object):
             pass
 
     def __str__(self):
-        return "<Cassette containing {0} recorded response(s)>".format(
+        return "<Cassette containing {} recorded response(s)>".format(
             len(self)
         )
 

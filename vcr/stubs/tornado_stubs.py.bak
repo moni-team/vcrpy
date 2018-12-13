@@ -1,5 +1,5 @@
 '''Stubs for tornado HTTP clients'''
-
+from __future__ import absolute_import
 
 import functools
 from six import BytesIO
@@ -53,7 +53,7 @@ def vcr_fetch_impl(cassette, real_fetch_impl):
 
             recorded_headers = vcr_response['headers']
             if isinstance(recorded_headers, dict):
-                recorded_headers = list(recorded_headers.items())
+                recorded_headers = recorded_headers.items()
             for k, vs in recorded_headers:
                 for v in vs:
                     headers.add(k, v)
@@ -87,7 +87,7 @@ def vcr_fetch_impl(cassette, real_fetch_impl):
             def new_callback(response):
                 headers = [
                     (k, response.headers.get_list(k))
-                    for k in list(response.headers.keys())
+                    for k in response.headers.keys()
                 ]
 
                 vcr_response = {

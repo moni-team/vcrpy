@@ -7,7 +7,7 @@ requests = pytest.importorskip("requests")
 import vcr  # NOQA
 
 try:
-    import http.client
+    import httplib
 except ImportError:
     import http.client as httplib
 
@@ -32,7 +32,7 @@ def test_flickr_multipart_upload(httpbin, tmpdir):
     """
     def _pretend_to_be_flickr_library():
         content_type, body = "text/plain", "HELLO WORLD"
-        h = http.client.HTTPConnection(httpbin.host, httpbin.port)
+        h = httplib.HTTPConnection(httpbin.host, httpbin.port)
         headers = {
             "Content-Type": content_type,
             "content-length": str(len(body))

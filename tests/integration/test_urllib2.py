@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 '''Integration tests with urllib2'''
 
+import ssl
 from six.moves.urllib.request import urlopen
 from six.moves.urllib_parse import urlencode
 import pytest_httpbin.certs
@@ -12,7 +13,9 @@ from assertions import assert_cassette_has_one_response
 
 
 def urlopen_with_cafile(*args, **kwargs):
-    kwargs['cafile'] = pytest_httpbin.certs.where()
+    context = ssl.create_default_context(cafile=pytest_httpbin.certs.where())
+    context.check_hostname = False
+    kwargs['context'] = context
     try:
         return urlopen(*args, **kwargs)
     except TypeError:
@@ -45,10 +48,10 @@ def test_response_headers(httpbin_both, tmpdir):
     '''Ensure we can get information from the response'''
     url = httpbin_both.url
     with vcr.use_cassette(str(tmpdir.join('headers.yaml'))):
-        open1 = urlopen_with_cafile(url).info().items()
+        open1 = list(urlopen_with_cafile(url).info().items())
 
     with vcr.use_cassette(str(tmpdir.join('headers.yaml'))):
-        open2 = urlopen_with_cafile(url).info().items()
+        open2 = list(urlopen_with_cafile(url).info().items())
 
         assert sorted(open1) == sorted(open2)
 
@@ -106,7 +109,7 @@ def test_post_data(httpbin_both, tmpdir):
 
 def test_post_unicode_data(httpbin_both, tmpdir):
     '''Ensure that it works when posting unicode data'''
-    data = urlencode({'snowman': u'☃'.encode('utf-8')}).encode('utf-8')
+    data = urlencode({'snowman': '☃'.encode('utf-8')}).encode('utf-8')
     url = httpbin_both.url + '/post'
     with vcr.use_cassette(str(tmpdir.join('post_data.yaml'))):
         res1 = urlopen_with_cafile(url, data).read()
